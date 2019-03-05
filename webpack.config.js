@@ -9,7 +9,7 @@ module.exports = {
         app: './src/index.js'
         // print: './src/print.js'
     },
-    devtool: "inline-source-map",
+    devtool: "inline-source-map",//如果将三个源文件（a.js, b.js 和 c.js）打包到一个 bundle（bundle.js）中，而其中一个源文件包含一个错误，那么堆栈跟踪就会简单地指向到 bundle.js
     devServer: {
         contentBase: './dist',
         hot: true
