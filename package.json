@@ -1,14 +1,15 @@
 {
   "name": "webpack-demo",
+  "sideEffects": false,
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "server": "node server.js",
-    "build": "webpack"
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -23,14 +24,20 @@
     "html-webpack-template": "^6.2.0",
     "jquery": "^3.3.1",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-middleware": "^3.6.0",
     "webpack-dev-server": "^3.2.1",
     "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "lodash": "^4.17.11"
   }
 }
