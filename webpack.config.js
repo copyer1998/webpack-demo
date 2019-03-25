@@ -1,20 +1,20 @@
-const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-
-
+const path = require("path");
 module.exports = {
-  entry: {
-    index: './src/index.js',
-    another: './src/another-module.js'
-  },
-  plugins: [
-    new HTMLWebpackPlugin({
-      title: 'Code Splitting'
-    })
-
-  ],
+  entry: "./src/index.js",
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"]
+      }
+    ]
   }
 };
