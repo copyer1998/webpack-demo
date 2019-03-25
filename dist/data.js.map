@@ -1,0 +1,1 @@
+{"version":3,"sources":["../webpacktur/demo14/data.js"],"names":["data"],"mappings":";;AAAA,IAAIA,IAAI,GAAG,aAAX","sourcesContent":["var data = 'Hello World';\n"],"file":"data.js"}
