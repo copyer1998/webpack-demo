@@ -1,1 +1,0 @@
-{"version":3,"sources":["../webpacktur/demo13/main.js"],"names":["$","require","text"],"mappings":";;AAAA,IAAIA,CAAC,GAAGC,OAAO,CAAC,QAAD,CAAf;;AACAD,CAAC,CAAC,IAAD,CAAD,CAAQE,IAAR,CAAa,aAAb","sourcesContent":["var $ = require('jquery');\n$('h1').text('Hello World');\n"],"file":"main.js"}

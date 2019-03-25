@@ -1,1 +1,0 @@
-{"version":3,"sources":["../webpacktur/demo11/a.js"],"names":["module","exports"],"mappings":";;AAAAA,MAAM,CAACC,OAAP,GAAiB,aAAjB","sourcesContent":["module.exports = 'Hello World';\n"],"file":"a.js"}

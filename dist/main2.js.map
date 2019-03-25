@@ -1,1 +1,0 @@
-{"version":3,"sources":["../webpacktur/demo02/main2.js"],"names":["document","write"],"mappings":";;AAAAA,QAAQ,CAACC,KAAT,CAAe,wBAAf","sourcesContent":["document.write('<h2>Hello Webpack</h2>');\n"],"file":"main2.js"}
